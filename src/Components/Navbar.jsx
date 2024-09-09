@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import "../assets/css/navbar.css"
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -13,14 +15,14 @@ const Navbar = () => {
     
     <nav id="nav" className="navbar">
       <div className="logo">
-        <a href="#"><img src="./img/xdezo-logo.png" alt="Xdezo Logo" /></a>
+        <Link to="/Home"><img src="./img/xdezo-logo.png" alt="Xdezo Logo" /></Link>
       </div>
       <ul className="menu">
-        <li><a href="index.html" className="nav-link">Home</a></li>
-        <li><a href="./nav_pages/about_us.html" className="nav-link">About</a></li>
+        <li><Link to="/Home" className="nav-link">Home</Link></li>
+        <li><Link to="/About" className="nav-link">About</Link></li>
         <li className="drp-down">
           <p className="nav-link courses-drp-dwn" onClick={toggleDropdown}>
-            All Courses <i className="fa-solid fa-caret-down"></i>
+            <Link to="/AllCourses">All Courses</Link> <i className="fa-solid fa-caret-down"></i>
           </p>
           {dropdownVisible && (
             <div className="dropdown-content">
@@ -31,9 +33,9 @@ const Navbar = () => {
             </div>
           )}
         </li>
-        <li><a href="./nav_pages/blog.html" className="nav-link">Blog</a></li>
-        <li><a href="./nav_pages/events.html" className="nav-link">Events</a></li>
-        <li><a href="./nav_pages/testimonials.html" className="nav-link">Testimonials</a></li>
+        <li><Link to="/Blog" className="nav-link">Blog</Link></li>
+        <li><Link to="/Events" className="nav-link">Events</Link></li>
+        <li><Link to="/Testimonials" className="nav-link">Testimonials</Link></li>
       </ul>
     </nav>
   );
