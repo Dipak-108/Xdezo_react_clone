@@ -1,5 +1,5 @@
 // import React from 'react'
-import AboutUs from './Home components/Aboutus'
+import Aboutussection from './Home components/Aboutussection'
 import CoursesAndTraining from './Home components/CoursesAndTraining'
 import '../assets/css/home.css'
 import  UpperSection from './Home components/UpperSection'
@@ -8,7 +8,7 @@ function Home() {
     <>
     <UpperSection/>
     <CoursesAndTraining/>
-    <AboutUs/>
+    <Aboutussection/>
     
     </>
     

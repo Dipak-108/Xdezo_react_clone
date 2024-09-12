@@ -199,7 +199,7 @@ h2 {
   align-items: center;
 }
 
-.about_us_section .about_us {
+.about_us_section .about_us1 {
   display: flex;
   /* border: solid; */
   justify-content: space-evenly;
@@ -207,7 +207,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.about_us .about_us_left {
+.about_us1 .about_us_left {
   width: 50%;
   /* border: solid rebeccapurple; */
   /* height: 60vh; */
@@ -224,7 +224,7 @@ h2 {
   }
 }
 
-.about_us .about_us_right {
+.about_us1 .about_us_right {
   flex: 1;
   margin: 3rem 4rem 1rem 1rem;
 
@@ -356,24 +356,24 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .about_us {
+  .about_us1 {
     flex-direction: column;
     justify-content: center;
   }
-  .about_us .about_us_left {
+  .about_us1 .about_us_left {
     width: 100%;
     text-align: center;
     /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
     border-radius: 20px;
   }
-  .about_us .about_us_right {
+  .about_us1 .about_us_right {
     width: auto;
 
     margin: auto;
     margin-top: 1rem;
   }
 
-  .about_us .about_us_right button {
+  .about_us1 .about_us_right button {
     margin: auto;
     margin-top: 2rem;
   }

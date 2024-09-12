@@ -4,7 +4,7 @@ const AboutUs = () => {
         <div className="explore">
           <button>Explore More Trainings</button>
         </div>
-        <div className="about_us">
+        <div className="about_us1">
           <div className="about_us_left">
             <h1>About Us</h1>
             <p>
